@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.game {
+    text-align: center;
+}
+.game__title {
+    margin: 2rem;
+    color: orange;
+}
+.winner {
+    transform: scale(1.2);
+    color: red;
+}
+.winner-sign {
+    background-color: yellow;
+}
+.game__container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 30rem;
+    margin: 2rem auto;
+}
+.cell {
+    width: 10rem;
+    height: 10rem;
+    box-shadow: 0 0 0 1px #666666;
+    border: 1px solid #666666;
+    cursor: pointer;
+    font-size: 6rem;
+    line-height: 10rem;
+}
+.restart {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: orange;
+    border: none;
+    font-family: inherit;
+    color: #fff;
+    border-radius: 3px;
+    transition: all .3s;
+}
+.restart:hover {
+    transform: scale(1.1);
+    background-color: orangered;
+}
